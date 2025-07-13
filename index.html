@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated On Scroll</title>
+    <style>
+        .box{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            }
+            .boxes{
+                position: relative;
+                width: 400px;
+                height: 450px;
+                background-color: black;
+                margin-bottom: 8px;
+                margin-left: 20px;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: auto;
+                /* display: grid; */
+                animation: appear  linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 50%;
+                animation-duration: 4s;
+            }
+            @keyframes appear {
+                from{
+                    opacity: 0;
+                    scale: 0.5;
+                    /* transform: translateX(-100px); */
+                    /* clip-path: inset(100% 100% 0 0); */
+                }
+                to{
+                    opacity: 1;
+                    scale: 1;
+                    /* transform: translateX(0px); */
+                    /* clip-path: inset(0 0 0 0); */
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxes" style="width: 500px;"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes" style="width: 800px;"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes" style="width: 500px;"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes" style="width: 100px;"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes" style="width: 500px;"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>        
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>
